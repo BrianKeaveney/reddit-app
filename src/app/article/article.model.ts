@@ -17,7 +17,7 @@ export class Article {
       }
 
       domain(): string {
-          try {
+          try {.
               const domasinAndPath: string = this.link.split('//')[1];
               return domasinAndPath.split('/')[0];
           } catch (err) {
