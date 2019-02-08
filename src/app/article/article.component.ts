@@ -11,16 +11,16 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article;
 
   constructor() { }
-  
-      voteUp(): Boolean {
-        this.article.voteUp();
-        return false;
-      }
-   
-      voteDown(): Boolean {
-        this.article.voteDown();
-        return false;
-      }
+
+  voteUp(): Boolean {
+    this.article.voteUp();
+    return false;
+  }
+
+  voteDown(): Boolean {
+    this.article.voteDown();
+    return false;
+  }
 
   ngOnInit() {
   }
