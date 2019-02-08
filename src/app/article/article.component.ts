@@ -10,12 +10,8 @@ export class ArticleComponent implements OnInit {
   @HostBinding('attr.class') cssClass = 'row';
   @Input() article: Article;
 
-  constructor() {
-    this.article = new Article(
-      'Angular',
-      'http://angular.io',
-      10);
-    }
+  constructor() { }
+  
       voteUp(): Boolean {
         this.article.voteUp();
         return false;
